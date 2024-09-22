@@ -11,7 +11,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python getPosts trigger function processed a request.')
 
     try:
-        url = os.getenv('MongDB_Connection_String') 
+        url = os.getenv('MongDB_Connection_String')
         client = pymongo.MongoClient(url)
         database = client['azure']
         collection = database['posts']
