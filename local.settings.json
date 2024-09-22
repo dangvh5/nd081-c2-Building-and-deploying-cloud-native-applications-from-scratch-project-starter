@@ -2,7 +2,12 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "FUNCTIONS_EXTENSION_VERSION": "~4"
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=626aa9b4-4539-410e-85ef-a97229b74ceb;IngestionEndpoint=https://canadacentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://canadacentral.livediagnostics.monitor.azure.com/;ApplicationId=ee13688d-e277-4b6d-8759-0efc938a44aa",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=clouddemo9456;AccountKey=f/iUf27LLKyAOC1SiNHA7Q2LohnbkUkDwkPabAqyErjb9QekzJrnJW1pJ+9FAko2JystO9VXilBw+ASt2eR/ZQ==;EndpointSuffix=core.windows.net",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=clouddemo9456;AccountKey=f/iUf27LLKyAOC1SiNHA7Q2LohnbkUkDwkPabAqyErjb9QekzJrnJW1pJ+9FAko2JystO9VXilBw+ASt2eR/ZQ==;EndpointSuffix=core.windows.net",
+    "WEBSITE_CONTENTSHARE": "dangvh8funcappb05d",
+    "MongDB_Connection_String": "mongodb://dangvh8cosmos-acc1:qAS2GauvuNO4gBwUIqeZ28JofPL8fwFd9IQRawmahvbdSd2PyhdYK4j2ZVkISAdFLt7r8MHkz2ppACDbrwlYFQ==@dangvh8cosmos-acc1.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@dangvh8cosmos-acc1@"
   },
   "ConnectionStrings": {},
   "AzureWebJobsStorage": ""
