@@ -10,5 +10,5 @@
     "MongDB_Connection_String": "mongodb://dangvh8cosmosacc:PGLEmleYG2NE7gsptFdNBw23v11fRDS1Dbw3h2JovJjgMTpS181P16PMhqx4duUvNe0ZNsngJ5S8ACDbhIxQ5Q==@dangvh8cosmosacc.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@dangvh8cosmosacc@"
   },
   "ConnectionStrings": {},
-  "AzureWebJobsStorage": ""
+  "AzureWebJobsStorage": "UseDevelopmentStorage=true"
 }
