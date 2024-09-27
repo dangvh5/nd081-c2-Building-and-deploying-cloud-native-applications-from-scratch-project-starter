@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: function-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: function-app
+  template:
+    metadata:
+      labels:
+        app: function-app
+    spec:
+      containers:
+      - name: function-app
+        image: dangvh8acr.azurecr.io/neighborly-api:latest
+        ports:
+        - containerPort: 80
