@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'nb'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
       id-token: write #This is required for requesting the JWT
@@ -68,16 +68,16 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E0E720856E1948EEBDE74955DB4F050F }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_09B7C925A2B74C258C942ABA5B8B5704 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5CE6C7C840B04A6BA50A66604C8FD4BF }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3EF7B9718D9C41CB999269789ED16196 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A27D9B1DBC684D47833FD7EBC9A833F2 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CBBC1C3B50A74D9D82A24097EF7275C6 }}
 
       - name: 'Deploy to Azure Functions'
         uses: Azure/functions-action@v1
         id: deploy-to-function
         with:
           app-name: 'dangvh8funcapp'
-          slot-name: 'Production'
+          slot-name: 'nb'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
